@@ -3,6 +3,8 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
+import java.util.Random;
+
 class RhymersDemo {
 
     public static void main(String[] args) {
@@ -20,7 +22,7 @@ class RhymersDemo {
             for (int j = 0; j < 3; j++)
                 rhymers[j].countIn(i);
 
-        java.util.Random rn = new java.util.Random();
+        Random rn = new Random();
         for (int i = 1; i < 15; i++)
             rhymers[3].countIn(rn.nextInt(20));
 
